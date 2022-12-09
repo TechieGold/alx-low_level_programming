@@ -3,7 +3,7 @@
  * Auth: Gold Israel
  */
 
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - prints exactly with proper grammar, but the outcome is a piece of art,
@@ -14,6 +14,6 @@
 
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art");	
+	printf("with proper grammar, but the outcome is a piece of art,");	
 	return 0;
 }
