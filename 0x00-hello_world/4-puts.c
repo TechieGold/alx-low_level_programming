@@ -1,19 +1,12 @@
 /**
- * file: 4puts
+ * File:4-puts.c
  * Auth: Gold Israel
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
-/**
- *main: Write a C program that prints exactly 
- * "Programming is like building a multilingual puzzle
- * Followed by a new line
- * return: 0
- */
-int main(void) 
+int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
-	
-	return 0;
-}	
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
