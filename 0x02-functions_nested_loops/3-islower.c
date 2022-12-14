@@ -3,7 +3,7 @@
 /**
   * _islower - Entry point
   *
-  * c - character to be checked
+  * @c:
   *
   * Description - Write a function that checks for lowercase character
   *
