@@ -2,7 +2,7 @@
 
 /**
   * print_last_digit - Entry point
-  *
+  * @n:
   * Description - Write a function that prints the last digit of a number
   *
   * Return: Last digit
