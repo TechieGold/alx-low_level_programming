@@ -20,7 +20,11 @@ char *create_array(unsigned int size, char c)
 
 	ptrArray = malloc(size * sizeof(char));
 
-	if (size == NULL)
+	if (ptrArray == NULL)
+	{
+		return (NULL);
+	}
+	if (size == 0)
 	{
 		return (NULL);
 	}
