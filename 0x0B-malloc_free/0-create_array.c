@@ -20,12 +20,10 @@ char *create_array(unsigned int size, char c)
 
 	ptrArray = malloc(size * sizeof(char));
 
-	if (ptrArray == NULL)
+	if (size == NULL)
 	{
-		printf("failed to allocate memory\n");
 		return (NULL);
 	}
-	
 	while (count < size)
 	{
 		ptrArray[count] = c;
