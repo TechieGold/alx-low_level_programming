@@ -3,21 +3,16 @@
 
 /**
   * str_concat - a function that concatenates two string
-  * prototype: char *str_concat(char *s1, char *s2);
   * @s1: Destination string
   * @s2: Source string
-  *
   * Return: pointer to a new allocated memory which contains the
   * content of s1 followed by s2.
   * on failure, return NULL
   */
 char *str_concat(char *s1, char *s2)
 {
-	char *ptr, *str1, *str2;
+	char *ptr, *str1 = s1, *str2 = s2;
 	int s1_len = 0, s2_len = 0, count = 0;
-	
-	str1 = s1;
-	str2 = s2;
 
 	if (s1 == NULL)
 		s1 = "";
