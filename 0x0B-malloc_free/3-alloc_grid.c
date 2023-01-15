@@ -29,19 +29,18 @@ int **alloc_grid(int width, int height)
 
 		if (twoD[hgt_index] == NULL)
 		{
-			for (; hgt_index >= 0; hgt_index++)
+			for (; hgt_index >= 0; hgt_index--)
 			{
 				free(twoD[hgt_index]);
-				free(twoD);
-				return (NULL);
 			}
+			free(twoD);
+			return (NULL);
 		}
 	}
 	for (hgt_index = 0; hgt_index < height; hgt_index++)
 	{
 		for (wid_index = 0; wid_index < width; wid_index++)
 			twoD[hgt_index][wid_index] = 0;
-		free(twoD[wid_index]);
 	}
 
 	return (twoD);
