@@ -1,3 +1,8 @@
+	The C preprocessor will process directives that are inserted into the C source code. The directives allows additional actions to be taken on the C source code before it is compiled into object code.
+	Preprocessing directivess are lines in your program that start with #. The # is followed by an identifier that is that is the directive name. for example, the #define is the directive that define a macro.
+
+	for the purpose of this concept, I will be solving the following tasks;
+
 task 0 - Create a header file that defines a macro named SIZE as an abbreviation for the token 1024.
 
 task 1 - Create a header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
