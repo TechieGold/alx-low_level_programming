@@ -9,7 +9,7 @@
   * Return: 0 on success.
   */
 
-void print_name(char *name, void (*f)(char*))
+void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL || f == NULL)
 		return;
