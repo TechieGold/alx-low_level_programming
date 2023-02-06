@@ -1,5 +1,4 @@
-#include <string.h>
-#include <math.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -13,22 +12,17 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result = 0;
-	int index;
-	int length = strlen(b);
 
 	if (b == NULL)
 		return (0);
 
-	for (index = 0; index < length; index++)
+	while (*b)
 	{
-		if (b[index] != '0' && b[index] != '1')
-		{
+		if (*b != '0' && *b != '1')
 			return (0);
-		}
-		else if (b[index] == '1')
-		{
-			result += pow(2, length - index - 1);
-		}
+		
+		result = (result << 1) | (*b++ - '0');
+		
 	}
 	return (result);
 }
