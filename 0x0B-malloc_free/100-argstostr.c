@@ -10,14 +10,15 @@
 
 char *argstostr(int ac, char **av)
 {
-	int length, i, POS = 0;
+	int length = 0, i, POS = 0;
 	char *concatenated;
 
 	if (ac == 0 || av == NULL)
-		return (0);
+		return (NULL);
 
 	for (i = 0; i < ac; i++)
 		length += strlen(av[i]) + 1;
+
 	concatenated = (char *) malloc((length + 1) * sizeof(char));
 
 	if (concatenated == NULL)
