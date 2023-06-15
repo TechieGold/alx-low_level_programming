@@ -17,8 +17,9 @@ char *argstostr(int ac, char **av)
 		return (0);
 
 	for (i = 0; i < ac; i++)
-		length += strlen(av[i]);
+		length += strlen(av[i]) + 1;
 	concatenated = (char *) malloc((length + 1) * sizeof(char));
+
 	if (concatenated == NULL)
 		return (NULL);
 
