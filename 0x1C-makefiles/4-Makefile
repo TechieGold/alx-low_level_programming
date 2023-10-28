@@ -1,10 +1,9 @@
-# Makkefile task 4
-
+# Makefile task 4
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rf -f
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
