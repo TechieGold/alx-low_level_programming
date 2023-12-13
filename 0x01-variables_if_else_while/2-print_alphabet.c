@@ -1,18 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main - Entry point.
+ * Description: This program use `putchar` to print alphabet in lowercase.
+ *
+ * Return: 0
  */
 int main(void)
 {
-	char alphabet;
+	char c = 'a';
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-
-	putchar(alphabet);
-	putchar('\n');
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	printf("\n");
 	return (0);
 }
