@@ -1,19 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main - Entry point.
+ * Description: Use `putchar` to print alphabet in lowercase and then in uppercase.
+ *
+ * Return: 0
  */
 int main(void)
 {
-	char alphABET;
+	char c;
 
-	for (alphABET = 'a'; alphABET <= 'z'; alphABET++)
-	putchar(alphABET);
+	for (c = 'a'; c <= 'z'; c++)
+	putchar(c);
 
-	for (alphABET = 'A'; alphABET <= 'Z'; alphABET++)
-	putchar(alphABET);
+	for (c = 'A'; c <= 'Z'; c++)
+	putchar(c);
 	putchar('\n');
+
 	return (0);
 }
