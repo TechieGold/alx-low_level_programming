@@ -2,28 +2,26 @@
 #include <stdlib.h>
 
 /**
-  * main - Entry point
-  * Description - A  program that prints all possible combinations of
-  * single-digit numbers
-  * Numbers must be separated by ,, followed by a space
-  * Numbers should be printed in ascending order
-  * You can only use the putchar
-  * Return: Always 0
-  */
+ * main - Entry point
+ * Description - A  program that prints all possible combinations of
+ * single-digit numbers. You can only use putchar.
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
-	int NUM = 0;
+	int i = 0;
 
-	while (NUM < 10)
+	while (i < 10)
 	{
-		putchar(NUM + '0');
-		if (NUM < 9)
+		putchar(i + '0');
+		if (i < 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		NUM++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
