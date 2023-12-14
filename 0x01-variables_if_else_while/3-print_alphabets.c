@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point.
- * Description: Use `putchar` to print alphabet in lowercase and then in uppercase.
+ * Description: Use `putchar` to print alphabet in lowercase
+ * and then in uppercase.
  *
  * Return: 0
  */
